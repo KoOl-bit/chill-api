@@ -1,0 +1,19 @@
+.image {
+  height: 20rem;
+}
+
+.section-footer {
+  height: 10rem;
+  width: 100%;
+  font-size: 25px;
+  color: white;
+  background: red;
+}
+
+.section-header {
+  height: 10rem;
+  width: 100%;
+  font-size: 25px;
+  color: white;
+  background: red;
+}
