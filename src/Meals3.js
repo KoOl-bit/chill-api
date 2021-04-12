@@ -1,10 +1,8 @@
 import React from 'react'
 
-function Meals3() {
+const Meals3 = () => {
     return (
-        <div>
-            <h2>Lasagna</h2>
-        </div>
+        <div className="page-heading"><h1>Meals3</h1></div>
     )
 }
 

@@ -8,10 +8,13 @@ import {Switch, Route} from 'react-router-dom'
 import Meals1 from './Meals1'
 import Meals2 from './Meals2'
 import Meals3 from './Meals3'
+import NotFound from './NotFound'
+
 
 
 function App() {
   const [articles, setArticles] = useState([]);
+  const { loading, setLoading } = useState(false)
 
   useEffect(() => {
     client
@@ -31,15 +34,13 @@ function App() {
           <Posts posts={articles} />
           </Route>
           <Route path ='/meals2'>
-            <Meals2 />
+            <Meals2 posts={articles} />
           </Route>
           <Route path ='/meals3'>
-            <Meals3 />
+            <Meals3 posts={articles} />
           </Route>
-          
-
+          <Route component={NotFound}/>
         </Switch>
-      
          <Footer />
     </div>
   );

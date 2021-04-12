@@ -14,13 +14,14 @@ const Post = ({ article }) => {
           title={header}
         />
       )}{" "}
-      <p className= "title"> {description}
+      <p className= "titles"> {description}
       </p>
     </div>
+
+
   );
 };
 
 export default Post;
 
 
-//if you have any queestions... just ask the Indian guy!!

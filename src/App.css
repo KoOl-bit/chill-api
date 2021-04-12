@@ -1,19 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+}
+
+.App {
+  text-align: center;
+  background-image: url("./components/rm218batch4-mynt-12.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.App::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 10;
+}
+
 .image {
   height: 20rem;
+  width: 25rem;
+}
+
+.image:hover {
+  transform: scale(1.3);
+  transition-duration: 0.5s;
 }
 
 .section-footer {
-  height: 10rem;
-  width: 100%;
-  font-size: 25px;
-  color: white;
-  background: red;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  z-index: 99;
+  height: 7rem;
+  white-space: pre;
 }
 
 .section-header {
-  height: 10rem;
-  width: 100%;
-  font-size: 25px;
-  color: white;
-  background: red;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  z-index: 99;
+  height: 7rem;
+}
+
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-list {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.order-list:hover {
+  background-color: #fff;
+  border-radius: 2px;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.titles {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.page-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  position: relative;
+  z-index: 2;
+}
+
+.page-heading h1 {
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0px 20px;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 800px) {
+  .order-list {
+    font-size: 25px;
+    margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-list {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    right: 0;
+    top: 64px;
+    height: 20rem;
+  }
+}
+
+.notfound {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 12rem;
+  margin-top: 13rem;
+  margin-bottom: 13rem;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  height: 9rem;
+  color: #fff;
+  font-size: 20px;
+}
+
+.notfound h2::after {
+  border-bottom: 2px solid #02dbcc;
+  padding-top: 15px;
+  width: 80px;
+  margin: auto;
+  content: "";
+  display: block;
+  margin-bottom: 15px;
 }
