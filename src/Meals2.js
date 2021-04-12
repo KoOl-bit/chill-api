@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Meals2() {
+const Meals2 = () => {
     return (
-        <div>
-            <h3>Doner</h3>
-        </div>
+        <div className="page-heading"><h1>Meals2</h1></div>
+            
+
     )
 }
 
