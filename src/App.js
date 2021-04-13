@@ -5,8 +5,7 @@ import Posts from "./components/Posts";
 import Footer from './Footer'
 import Header from './Header'
 import {Switch, Route} from 'react-router-dom'
-import Meals1 from './Meals1'
-import Meals2 from './Meals2'
+import About from './about'
 import Meals3 from './Meals3'
 import NotFound from './NotFound'
 
@@ -33,8 +32,8 @@ function App() {
           <Route path ='/components/posts'>
           <Posts posts={articles} />
           </Route>
-          <Route path ='/meals2'>
-            <Meals2 posts={articles} />
+          <Route path ='/about'>
+            <About posts={articles} />
           </Route>
           <Route path ='/meals3'>
             <Meals3 posts={articles} />
