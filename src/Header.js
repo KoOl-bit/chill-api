@@ -7,11 +7,8 @@ function Header() {
         <div className="section-header">
             <nav className="menu-list">
               
-            <NavLink className="order-list"  to='/components/posts'>Meal1</NavLink>
-            
-            <NavLink  className="order-list" to='/meals2'>Meal2</NavLink>
-            
-            <NavLink  className="order-list" to='/meals3'>Meal3</NavLink>
+            <NavLink className="order-list"  to='/components/posts'>Home</NavLink>
+            <NavLink  className="order-list" to='/about'>About</NavLink>
             <NavLink  className="order-list" to='/notfound'></NavLink>
             </nav>
         </div>
